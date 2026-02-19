@@ -31,11 +31,11 @@ The output products which I already generated with this program (the JSON file, 
 
 - **LLM variability:** Output may vary between runs. Strict, descriptive prompts and JSON mode reduce but do not eliminate this.
 - **Image generation:** Subject to provider safety and content policies; some prompts may return no image. Rate limits can also block text or image steps.
-- **PDF quality:** The text cleaner handles common encoding and table issues well; unusual layouts may occasionally produce noisy input for the LLM.
+- **PDF quality:** The text cleaner handles common encoding and table issues well; unusual layouts may occasionally produce noisy input for the LLM. The current PDF reader cuts off words if they go outside the table due to bad formatting. However, I still chose it because the way in which it formats the text inside tables makes it more comprehensible for the LLM unlike another PDF reader which does read text that goes outside the table but doesn't format the text inside the table itself well. I mitigated this by writing in the prompt that if there is a word in the final JSON which looks incomplete like it was cut off, the LLM should complete that specific word
 
 ## What you would improve with more time
 
 - **API robustness:** Add retries with backoff for API calls to better handle rate limits and transient failures (image and text steps).
-- **PDF handling:** Extend the text cleaner with more encoding and table patterns and optional language detection, so unusual layouts produce cleaner input for the LLM.
+- **PDF handling:** Extend the text cleaner with more encoding and table patterns and optional language detection, so unusual layouts produce cleaner input for the LLM. Try to find another PDF reader which doesn't cut off words if they go outside the table but at the same time formats the text inside tables well in a comprehensive manner.
 - **LLM consistency:** Validate JSON against a strict schema (e.g. Pydantic) and optionally re-prompt or fallback when the model returns inconsistent or malformed output.
 - **Whole application:** Merging the different files, so they make one enterprise application with better UI and different pages for the different functions.

@@ -12,6 +12,10 @@ After this, you need to start the file 'ui_enrich.py', upload the previously sav
 
 Finally, you need to start the file 'ui_image_generation.py', copy and paste the previously generated marketing summary and use it to generate an image. You then save the image locally.
 
+## The output products
+
+The output products which I already generated with this program (the JSON file, the short marketing summary, the image prompt and the image) are inside the folder 'AI_Output'
+
 ## Prompt design choices
 
 - **Structured extraction (Step 2):** The prompt specifies an exact JSON schema (menu_items array, event object with title/date/description/location). We ask for "only valid JSON, no markdown or explanation" and use `response_mime_type=application/json` so the model returns parseable JSON. Rules explicitly forbid hallucination and ask for `null` or omission when data is missing. Ingredients are normalized to real ingredient names (e.g. "sweet banana" → "banana"); event description is kept concise and informative.

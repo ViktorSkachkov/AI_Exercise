@@ -1,0 +1,67 @@
+{
+  "menu_items": [
+    {
+      "name": "Margarita",
+      "category": "COCKTAILS",
+      "price": 14,
+      "ingredients": "Tequila, lime juice, salt",
+      "currency": "EUR"
+    },
+    {
+      "name": "Negroni",
+      "category": "COCKTAILS",
+      "price": 15,
+      "ingredients": "Gin, Campari, vermouth",
+      "currency": "EUR"
+    },
+    {
+      "name": "Paloma",
+      "category": "COCKTAILS",
+      "price": null,
+      "ingredients": "Tequila, grapefruit soda, lime",
+      "currency": null
+    },
+    {
+      "name": "Espresso Martini",
+      "category": "COCKTAILS",
+      "price": 16,
+      "ingredients": "Vodka, coffee liqueur, espresso",
+      "currency": "EUR"
+    },
+    {
+      "name": "Beef Burger",
+      "category": "FOOD",
+      "price": 18,
+      "ingredients": "Beef patty, brioche bun, cheddar, pickles, fries",
+      "currency": "EUR"
+    },
+    {
+      "name": "Caesar Salad",
+      "category": "FOOD",
+      "price": 12.5,
+      "ingredients": "Romaine, parmesan, croutons, caesar dressing",
+      "currency": "EUR"
+    },
+    {
+      "name": "Truffle Fries",
+      "category": "FOOD",
+      "price": 7,
+      "ingredients": "Potatoes, truffle mayo, parmesan",
+      "currency": "EUR"
+    },
+    {
+      "name": "Soup of the day",
+      "category": "FOOD",
+      "price": null,
+      "ingredients": null,
+      "currency": null
+    }
+  ],
+  "event": {
+    "title": "DJ Night: House & Techno",
+    "date": "2026-03-15",
+    "time": "21:00",
+    "description": "Energetic night with guest DJs and signature cocktails. Free entry before 22:00; 10 EUR after. Reservations are recommended.",
+    "location": "Sofia (City Center)"
+  }
+}

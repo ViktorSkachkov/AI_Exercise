@@ -1,0 +1,8 @@
+# Do not commit the real API key
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
